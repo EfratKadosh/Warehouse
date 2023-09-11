@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  backend:
+    # env_file:
+    #     "./server/.env"
+    build:
+      context: ./server
+      dockerfile: ./Dockerfile
+    image: "dfm/server"
+    ports:
+      - "3001:5000"

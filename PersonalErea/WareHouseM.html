@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title id="titlefullname"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="PA.css" />
+  </head>
+  <body>
+    <button onclick="goToHomePage()" class="button-7" role="button">
+      HomePage
+    </button>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <div class="container bootstrap snippets bootdey">
+      <div id="items" class="row">
+        <div class="profile-nav col-md-3">
+          <div class="panel">
+            <div class="user-heading round">
+              <a href="#">
+                <img
+                  src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                  alt
+                />
+              </a>
+              <h1 id="fullname"></h1>
+            </div>
+            <ul class="nav nav-pills nav-stacked">
+              <li class="active">
+                <a onclick="acceptOrders()" href="#">
+                  <i class="fa fa-user"></i> פרופיל</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-calendar"></i> יומן
+                  <span class="label label-warning pull-right r-activity"
+                    >9</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a onclick="faultItem()" href="#">
+                  <i class="fa fa-edit"></i> ניהול תקלות</a
+                >
+              </li>
+              <li>
+                <a onclick="showItem()" href="#">
+                  <i class="fa fa-edit"></i> ניהול הזמנות פריטים</a
+                >
+              </li>
+
+              <li>
+                <a onclick="showPS()" href="#">
+                  <i class="fa fa-edit"></i> ניהול הזמנות פודקאסטים</a
+                >
+              </li>
+              <li>
+                <a href="Statistics.html">
+                  <i class="fa fa-edit"></i> סטטיסטיקות</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="profile-info col-md-9">
+          <div class="panel">
+            <div class="panel-body bio-graph-info">
+              <h1>פרטי משתמש</h1>
+              <div class="row">
+                <div class="bio-row">
+                  <p><span id="firstname"></span><span>: שם פרטי</span></p>
+                </div>
+                <div class="bio-row">
+                  <p><span id="lastname"></span><span>: שם משפחה </span></p>
+                </div>
+                <div class="bio-row">
+                  <p>
+                    <span id="DateOfBirth"></span><span>: תאריך לידה </span>
+                  </p>
+                </div>
+                <div class="bio-row">
+                  <p><span id="username"></span><span>: שם משתמש </span></p>
+                </div>
+                <div class="bio-row">
+                  <p><span id="title"></span> <span>: תפקיד</span></p>
+                </div>
+                <div class="bio-row">
+                  <p><span id="email"></span><span> </span></p>
+                </div>
+                <div class="bio-row">
+                  <p><span>תקשורת חזותית </span><span>: מחלקה </span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="PA-SM.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>
